@@ -1,7 +1,7 @@
 package office
 
 import (
-	"github.com/kpmy/odf/model"
+	"github.com/iv-menshenin/odf/model"
 )
 
 const (

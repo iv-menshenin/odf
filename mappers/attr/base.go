@@ -1,7 +1,7 @@
 package attr
 
 import (
-	"github.com/kpmy/odf/model"
+	"github.com/iv-menshenin/odf/model"
 	"github.com/kpmy/ypk/assert"
 )
 

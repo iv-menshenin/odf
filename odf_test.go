@@ -1,14 +1,14 @@
 package odf
 
 import (
-	"github.com/kpmy/odf/generators"
-	"github.com/kpmy/odf/mappers"
-	"github.com/kpmy/odf/mappers/attr"
-	"github.com/kpmy/odf/model"
-	_ "github.com/kpmy/odf/model/stub"
-	"github.com/kpmy/odf/xmlns"
-	"github.com/kpmy/odf/xmlns/fo"
-	"github.com/kpmy/odf/xmlns/table"
+	"github.com/iv-menshenin/odf/generators"
+	"github.com/iv-menshenin/odf/mappers"
+	"github.com/iv-menshenin/odf/mappers/attr"
+	"github.com/iv-menshenin/odf/model"
+	_ "github.com/iv-menshenin/odf/model/stub"
+	"github.com/iv-menshenin/odf/xmlns"
+	"github.com/iv-menshenin/odf/xmlns/fo"
+	"github.com/iv-menshenin/odf/xmlns/table"
 	"github.com/kpmy/ypk/assert"
 	"image/color"
 	"os"

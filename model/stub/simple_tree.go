@@ -8,7 +8,7 @@ package stub
 
 import (
 	"encoding/xml"
-	"github.com/kpmy/odf/model"
+	"github.com/iv-menshenin/odf/model"
 	"github.com/kpmy/ypk/assert"
 )
 

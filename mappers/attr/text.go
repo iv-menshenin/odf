@@ -1,10 +1,10 @@
 package attr
 
 import (
-	"github.com/kpmy/odf/model"
-	"github.com/kpmy/odf/xmlns/fo"
-	"github.com/kpmy/odf/xmlns/style"
-	"github.com/kpmy/odf/xmlns/text"
+	"github.com/iv-menshenin/odf/model"
+	"github.com/iv-menshenin/odf/xmlns/fo"
+	"github.com/iv-menshenin/odf/xmlns/style"
+	"github.com/iv-menshenin/odf/xmlns/text"
 	"image/color"
 )
 

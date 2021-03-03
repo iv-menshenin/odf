@@ -1,8 +1,8 @@
 package stub
 
 import (
-	"github.com/kpmy/odf/model"
-	"github.com/kpmy/odf/xmlns"
+	"github.com/iv-menshenin/odf/model"
+	"github.com/iv-menshenin/odf/xmlns"
 	"github.com/kpmy/ypk/assert"
 	"github.com/kpmy/ypk/halt"
 	"image/color"

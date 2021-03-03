@@ -1,12 +1,12 @@
 package mappers
 
 import (
-	"github.com/kpmy/odf/mappers/attr"
-	"github.com/kpmy/odf/model"
-	"github.com/kpmy/odf/xmlns/office"
-	"github.com/kpmy/odf/xmlns/style"
-	"github.com/kpmy/odf/xmlns/svg"
-	"github.com/kpmy/odf/xmlns/text"
+	"github.com/iv-menshenin/odf/mappers/attr"
+	"github.com/iv-menshenin/odf/model"
+	"github.com/iv-menshenin/odf/xmlns/office"
+	"github.com/iv-menshenin/odf/xmlns/style"
+	"github.com/iv-menshenin/odf/xmlns/svg"
+	"github.com/iv-menshenin/odf/xmlns/text"
 	"github.com/kpmy/ypk/halt"
 	"strconv"
 )

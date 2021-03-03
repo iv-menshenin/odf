@@ -1,9 +1,9 @@
 package mappers
 
 import (
-	"github.com/kpmy/odf/mappers/attr"
-	"github.com/kpmy/odf/model"
-	"github.com/kpmy/odf/xmlns/text"
+	"github.com/iv-menshenin/odf/mappers/attr"
+	"github.com/iv-menshenin/odf/model"
+	"github.com/iv-menshenin/odf/xmlns/text"
 	"github.com/kpmy/ypk/assert"
 )
 

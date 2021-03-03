@@ -1,10 +1,10 @@
 package mappers
 
 import (
-	"github.com/kpmy/odf/mappers/attr"
-	"github.com/kpmy/odf/model"
-	"github.com/kpmy/odf/xmlns"
-	"github.com/kpmy/odf/xmlns/office"
+	"github.com/iv-menshenin/odf/mappers/attr"
+	"github.com/iv-menshenin/odf/model"
+	"github.com/iv-menshenin/odf/xmlns"
+	"github.com/iv-menshenin/odf/xmlns/office"
 	"github.com/kpmy/ypk/assert"
 	"github.com/kpmy/ypk/halt"
 	"reflect"

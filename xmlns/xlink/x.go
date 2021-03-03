@@ -1,8 +1,8 @@
 package xlink
 
 import (
-	"github.com/kpmy/odf/model"
-	"github.com/kpmy/odf/xmlns"
+	"github.com/iv-menshenin/odf/model"
+	"github.com/iv-menshenin/odf/xmlns"
 )
 
 const (
