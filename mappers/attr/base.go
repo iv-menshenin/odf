@@ -59,6 +59,9 @@ func (e *easy) put(n model.AttrName, x interface{}, foo func(value)) {
 func (e *easy) equal(t *easy) (ok bool) {
 	ok = (e.m != nil) == (t.m != nil)
 	if ok && (e.m != nil) {
+		if len(e.m) != len(t.m) {
+			return false
+		}
 		for k, v := range e.m {
 			ok = t.m[k].data == v.data
 			if !ok {
