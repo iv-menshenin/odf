@@ -1,6 +1,7 @@
 package attr
 
 import (
+	"fmt"
 	"github.com/iv-menshenin/odf/model"
 	"github.com/iv-menshenin/odf/xmlns/fo"
 	"github.com/iv-menshenin/odf/xmlns/style"
@@ -27,6 +28,12 @@ func (p *ParagraphAttributes) Write(wr model.Writer) {
 	wr.Attr(style.Family, style.FamilyParagraph)
 	wr.WritePos(New(style.ParagraphProperties))
 	p.apply(wr)
+}
+
+//AlignLeft on page
+func (p *ParagraphAttributes) AlignLeft() *ParagraphAttributes {
+	p.put(fo.TextAlign, fo.Left, nil)
+	return p
 }
 
 //AlignRight on page
@@ -60,5 +67,23 @@ func (p *ParagraphAttributes) PageBreak() *ParagraphAttributes {
 			v.wr.Attr(fo.BreakBefore, fo.Page)
 		}
 	})
+	return p
+}
+
+//SetIndent sets the indentation of the first line of a paragraph
+func (p *ParagraphAttributes) SetIndent(inch float64) *ParagraphAttributes {
+	p.put(fo.TextIndent, fmt.Sprintf("%0.4fin", inch), nil)
+	return p
+}
+
+//SetMarginLeft adjusts the white space at the right border of the paragraph
+func (p *ParagraphAttributes) SetMarginLeft(inch float64) *ParagraphAttributes {
+	p.put(fo.MarginLeft, fmt.Sprintf("%0.4fin", inch), nil)
+	return p
+}
+
+//SetMarginRight adjusts the white space at the right border of the paragraph
+func (p *ParagraphAttributes) SetMarginRight(inch float64) *ParagraphAttributes {
+	p.put(fo.MarginRight, fmt.Sprintf("%0.4fin", inch), nil)
 	return p
 }
