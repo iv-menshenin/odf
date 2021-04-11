@@ -77,7 +77,7 @@ func (f *Formatter) WriteString(s string) {
 }
 
 //SetAttr sets any type of attributes to be used in future, only one instance of any typed attributes supported. Attributes are flushed only when real content is written. SetAttr can accept nil value for dropping all attributes
-func (f *Formatter) SetAttr(a attr.Attributes) *Formatter {
+func (f *Formatter) SetAttr(a attr.Attributes) {
 	assert.For(f.ready, 20)
 	if a != nil {
 		n := reflect.TypeOf(a).String()
@@ -93,7 +93,6 @@ func (f *Formatter) SetAttr(a attr.Attributes) *Formatter {
 	} else {
 		f.attr.reset()
 	}
-	return f
 }
 
 //RegisterFont sets the Font Face Declaration item, name later can be used in attr.TextAttributes

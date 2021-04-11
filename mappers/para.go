@@ -128,3 +128,11 @@ func (p *ParaMapper) WriteString(_s string) {
 		}
 	}
 }
+
+func (p *ParaMapper) SetAttr(a attr.Attributes) {
+	p.fm.SetAttr(a)
+}
+
+func (p *ParaMapper) RegisterFont(name, fontFace string) {
+	p.fm.RegisterFont(name, fontFace)
+}
