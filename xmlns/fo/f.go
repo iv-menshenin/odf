@@ -17,9 +17,11 @@ const (
 	BorderTop    model.AttrName = "fo:border-top"
 	BorderBottom model.AttrName = "fo:border-bottom"
 
-	TextIndent  model.AttrName = "fo:text-indent"
-	MarginLeft  model.AttrName = "fo:margin-left"
-	MarginRight model.AttrName = "fo:margin-right"
+	TextIndent   model.AttrName = "fo:text-indent"
+	MarginLeft   model.AttrName = "fo:margin-left"
+	MarginRight  model.AttrName = "fo:margin-right"
+	MarginTop    model.AttrName = "fo:margin-top"
+	MarginBottom model.AttrName = "fo:margin-bottom"
 )
 
 const (

@@ -3,6 +3,7 @@ package table
 import (
 	"github.com/iv-menshenin/odf/model"
 	"github.com/iv-menshenin/odf/xmlns"
+	"github.com/iv-menshenin/odf/xmlns/fo"
 )
 
 const (
@@ -24,9 +25,6 @@ const (
 const (
 	BorderModelCollapsing = "collapsing"
 	BorderModelSeparating = "separating"
-	AlignLeft             = "left"
-	AlignRight            = "right"
-	AlignCenter           = "center"
 )
 
 func init() {
@@ -35,5 +33,5 @@ func init() {
 	xmlns.Typed[BorderModel] = xmlns.ENUM
 	xmlns.Enums[BorderModel] = []string{BorderModelCollapsing, BorderModelSeparating}
 	xmlns.Typed[Align] = xmlns.ENUM
-	xmlns.Enums[Align] = []string{AlignCenter, AlignLeft, AlignRight}
+	xmlns.Enums[Align] = []string{fo.Center, fo.Left, fo.Right, fo.Justify}
 }

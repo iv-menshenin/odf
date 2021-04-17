@@ -30,33 +30,36 @@ func (t *TableAttributes) Write(wr model.Writer) {
 }
 
 //BorderModel of table (table.BorderModelCollapsing, table.BorderModelSeparating
-func (t *TableAttributes) BorderModel(m string) *TableAttributes {
+func (t *TableAttributes) BorderModel(m string) {
 	t.put(table.BorderModel, m, nil)
-	return t
 }
 
 //AlignLeft table on page
-func (t *TableAttributes) AlignLeft() *TableAttributes {
-	t.put(table.Align, table.AlignLeft, nil)
-	return t
+func (t *TableAttributes) AlignLeft() {
+	t.put(table.Align, fo.Left, nil)
 }
 
 //AlignRight table on page
-func (t *TableAttributes) AlignRight() *TableAttributes {
-	t.put(table.Align, table.AlignRight, nil)
-	return t
+func (t *TableAttributes) AlignRight() {
+	t.put(table.Align, fo.Right, nil)
 }
 
 //AlignCenter table on page
-func (t *TableAttributes) AlignCenter() *TableAttributes {
-	t.put(table.Align, table.AlignCenter, nil)
-	return t
+func (t *TableAttributes) AlignCenter() {
+	t.put(table.Align, fo.Center, nil)
+}
+
+func (t *TableAttributes) AlignJustify() {
+	t.put(table.Align, fo.Justify, nil)
+}
+
+func (t *TableAttributes) AlignCustom(alignment string) {
+	t.put(table.Align, alignment, nil)
 }
 
 //Width of whole table
-func (t *TableAttributes) Width(w float64) *TableAttributes {
-	t.put(style.Width, w, nil)
-	return t
+func (t *TableAttributes) Width(inch float64) {
+	t.put(style.Width, inch, nil)
 }
 
 //TableRowAttributes represents Table Row Family style fluent builder

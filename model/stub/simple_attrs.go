@@ -58,7 +58,7 @@ type MeasureAttr struct {
 }
 
 func (a *MeasureAttr) String() string {
-	return strconv.FormatFloat(a.Value, 'f', 8, 64) + "cm"
+	return strconv.FormatFloat(a.Value, 'f', 8, 64) + "in"
 }
 
 func (a *MeasureAttr) MarshalXMLAttr(name xml.Name) (xa xml.Attr, err error) {
